@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pankaj Chandrakant Mulay – Software Builder</title>
+  <title>A B C – Software Builder</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -13,48 +18,46 @@
       color: #222;
       line-height: 1.6;
     }
+
+    /* NAVBAR */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      padding: 1rem;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #0366d6;
+    }
+
     header {
       background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
       color: white;
       padding: 4rem 2rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.8rem;
     }
+
     header p {
       font-size: 1.2rem;
       margin-top: 0.5rem;
-      opacity: 0.9;
     }
-    section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-      color: #333;
-    }
-    .links a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0366d6;
-      font-weight: bold;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      padding: 2rem;
-      text-align: center;
-      margin-top: 2rem;
-    }
+
     .badge {
       display: inline-block;
       background: #0366d6;
@@ -64,134 +67,139 @@
       font-size: 0.9rem;
       margin-top: 0.5rem;
     }
-    ul {
-      padding-left: 0;
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
     }
-    li {
-      margin-bottom: 0.7rem;
+
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
+
     hr {
       margin: 2rem 0;
       border: none;
       border-top: 1px solid #ddd;
     }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+    }
+
   </style>
 </head>
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">Me</a>
+  <a href="#philosophy">How I Think</a>
+  <a href="#books">Books</a>
+  <a href="#bucket">Bucket List</a>
+  <a href="#projects">Builds</a>
+  <a href="#connect">Connect</a>
+</nav>
+
 <header>
-  <h1>Pankaj Chandrakant Mulay</h1>
+  <h1>A B C</h1>
   <p>I build software, smile and drink coffee ☕</p>
   <div class="badge">Engineer at heart. Builder by habit.</div>
 </header>
 
-  <section style="background: #fff; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
-  <h2>Things I Believe In 💭</h2>
-
-  <div style="font-size: 1.2rem; line-height: 1.8;">
-    <p>⚖️ <strong>Good software architecture is just smart trade-offs</strong> — there is no perfect design, only better decisions.</p>
-
-    <p>🧠 <strong>Software engineering = learn the rules… then know when to break them.</strong></p>
-
-    <p>☕ <strong>Most bugs can be solved with patience, curiosity… and coffee.</strong></p>
-
-    <p>🚀 <strong>Simple scales. Complex breaks.</strong></p>
-  </div>
+<!-- PHILOSOPHY -->
+<section id="philosophy" style="background:#fff;">
+  <h2>How I Think 💭</h2>
+  <p>⚖️ <strong>Good software architecture is just smart trade-offs.</strong></p>
+  <p>🧠 <strong>Learn the rules… then know when to break them.</strong></p>
+  <p>☕ <strong>Most bugs can be solved with patience, curiosity… and coffee.</strong></p>
+  <p>🚀 <strong>Simple scales. Complex breaks.</strong></p>
 </section>
 
-<section>
+<!-- ABOUT -->
+<section id="about">
   <h2>About Me</h2>
 
-  <p>I've swum in the <strong>Atlantic</strong>, the <strong>Andaman Sea</strong>, and the <strong>Caribbean</strong>. Not all in one day, but still counts 😄</p>
+  <p>I’ve swum in three oceans, jumped out of a plane, gone whale watching, and camped under Ontario skies. Recently trying yoga… still negotiating with gravity 🧘</p>
 
-  <p>I’ve gone <strong>skydiving</strong>, done <strong>whale watching</strong>, camped in provincial parks, and recently started trying <strong>yoga</strong> (still figuring out how to fall over gracefully 🧘).</p>
+  <p>Explored Banff, Jasper, Nova Scotia, Vancouver Island and more. Some for nature, some for peace, some just because why not 🌍</p>
 
-  <p>I’ve explored places like <strong>Banff</strong>, <strong>Jasper</strong>, <strong>Nova Scotia</strong>, <strong>Vancouver Island</strong>, and a few beaches where time just slows down.</p>
-
-  <p>Also — I <strong>really love coffee</strong>. This might be the most consistent thing about me. ☕</p>
+  <p>I really love coffee. This is non-negotiable ☕</p>
 
   <hr>
 
-  <p>On the tech side, I’ve been building software for <strong>more than 20 years</strong>.</p>
+  <p>I’ve been building software for 19 years.</p>
 
-  <p>I started with <strong>C and C++</strong> in engineering — and if I’m being honest, I don’t remember much of it now. DSA felt like rocket science back then... and yeah, still does on some days.</p>
+  <p>Started with C/C++ (don’t ask me anything now 😄). DSA felt like rocket science then… still does sometimes.</p>
 
-  <p>My final year project involved <strong>refactoring C code</strong> — before it was cool (or even common in that ecosystem). I also gave a seminar on <strong>Extreme Programming</strong> in 2005, which at the time felt like explaining the future to the present.</p>
+  <p>Did a final year project on refactoring C code before it was cool. Also gave a seminar on Extreme Programming in 2005 — felt like explaining the future.</p>
 
-  <p>I picked up <strong>Java on the job</strong>, and what started as “just enough to get things done” slowly turned into a long-term relationship. Over time, I’ve grown to enjoy going deeper — understanding internals, performance, and how things really work under the hood.</p>
+  <p>Picked up Java on the job and stayed. From “just enough” to deep curiosity about internals, performance, and design.</p>
 
-  <p>Lately, I’ve been exploring <strong>Python</strong>, <strong>AI</strong>, and <strong>payment systems</strong> — and something just clicked. I’m learning again, properly this time. Even revisiting data structures and algorithms… voluntarily 😄</p>
-
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <p>🚧 Work in progress... exciting things coming soon.</p>
-</section>
-
-<section>
-  <h2>Books & Experiments 📚🧪</h2>
-
-  <div style="margin-bottom: 2rem;">
-    <h3>📖 Currently Reading</h3>
-    <ul>
-      <li><strong>Effective Java</strong> — Joshua Bloch</li>
-    </ul>
-  </div>
-
-  <div style="margin-bottom: 2rem;">
-    <h3>✅ Finished</h3>
-    <ul>
-      <li><strong>Deep Work</strong> — Cal Newport</li>
-      <li><strong>Head First Software Architecture</strong> — Mark Richards & Neal Ford</li>
-      <li><strong>Awakening at Midlife</strong> — Kathleen A. Brehony</li>
-      <li><strong>Eat That Frog</strong> — Brian Tracy</li>
-      <li><strong>The Alchemist</strong> — Paulo Coelho</li>
-      <li><strong>The Monk Who Sold His Ferrari</strong> — Robin Sharma</li>
-    </ul>
-  </div>
-
-  <div style="margin-bottom: 2rem;">
-    <h3>📚 Next Up</h3>
-    <ul>
-      <li><strong>Atomic Habits</strong> — James Clear</li>
-      <li><strong>The Lord of the Rings</strong> — J.R.R. Tolkien</li>
-      <li><strong>The Da Vinci Code</strong> — Dan Brown</li>
-      <li><strong>Mrityunjaya</strong> — Shivaji Sawant</li>
-      <li><strong>Mahabharata</strong> — (Multiple interpretations)</li>
-    </ul>
-  </div>
-
-  <div>
-    <h3>🧪 Currently Experimenting</h3>
-    <p>Yoga 🧘, sketching ✏️, improving focus, and slowly becoming friends with DSA.</p>
-  </div>
+  <p>Now exploring Python, AI, and payment systems — and actually enjoying learning again.</p>
 
 </section>
 
-<section>
-  <h2>Bucket List</h2>
-  <p>Things I want to do before my laptop battery gives up:</p>
-  <ul style="list-style: none;">
-    <li><input type="checkbox" checked disabled> Skydiving ✅</li>
-    <li><input type="checkbox" checked disabled> Swim in 3 oceans ✅</li>
-    <li><input type="checkbox"> Hike the Inca Trail to Machu Picchu</li>
-    <li><input type="checkbox"> Explore the Amazon Rainforest</li>
+<!-- BOOKS -->
+<section id="books">
+  <h2>Books 📚</h2>
+
+  <h3>📖 Currently Reading</h3>
+  <ul>
+    <li><strong>Effective Java</strong> — Joshua Bloch</li>
+  </ul>
+
+  <h3>✅ Finished</h3>
+  <ul>
+    <li><strong>Deep Work</strong> — Cal Newport</li>
+    <li><strong>Head First Software Architecture</strong> — Mark Richards & Neal Ford</li>
+    <li><strong>Awakening at Midlife</strong> — Kathleen A. Brehony</li>
+    <li><strong>Eat That Frog</strong> — Brian Tracy</li>
+    <li><strong>The Alchemist</strong> — Paulo Coelho</li>
+    <li><strong>The Monk Who Sold His Ferrari</strong> — Robin Sharma</li>
+  </ul>
+
+  <h3>📚 Next Up</h3>
+  <ul>
+    <li><strong>Atomic Habits</strong> — James Clear</li>
+    <li><strong>The Lord of the Rings</strong> — J.R.R. Tolkien</li>
+    <li><strong>The Da Vinci Code</strong> — Dan Brown</li>
+    <li><strong>Mrityunjaya</strong> — Shivaji Sawant</li>
+    <li><strong>Mahabharata</strong></li>
   </ul>
 </section>
 
-<section>
+<!-- BUCKET -->
+<section id="bucket">
+  <h2>Bucket List</h2>
+  <ul style="list-style:none;">
+    <li><input type="checkbox" checked disabled> Skydiving ✅</li>
+    <li><input type="checkbox" checked disabled> Swim in 3 oceans ✅</li>
+    <li><input type="checkbox"> Machu Picchu – Inca Trail</li>
+    <li><input type="checkbox"> Amazon Rainforest</li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Builds 🚧</h2>
+  <p>Work in progress… exciting things coming.</p>
+</section>
+
+<!-- CONNECT -->
+<section id="connect">
   <h2>Connect</h2>
-  <div class="links">
-    <a href="https://github.com/pcm1984" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/pankaj-mulay-43ba0576" target="_blank">LinkedIn</a>
-    <a href="https://banyanbat.blogspot.ca" target="_blank">Blog</a>
-  </div>
-  <p>Email: <strong>mulay.pankaj@yahoo.com</strong></p>
+  <p>GitHub | LinkedIn | Blog (links coming soon)</p>
 </section>
 
 <footer>
-  <p>Made with ☕, curiosity, and a lot of trial & error.</p>
+  <p>Made with ☕ and curiosity</p>
 </footer>
 
 </body>
