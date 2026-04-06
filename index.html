@@ -3,30 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pankaj Chandrakant Mulay – Software Builder</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+  <title>A B C – Software Builder</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet"/>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f4f6f8;
+      background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+      background-size: 20px 20px;
       color: #222;
-      line-height: 1.6;
-      background: #f4f6f8;
-  background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
-  background-size: 20px 20px;
     }
 
-    /* NAVBAR */
     nav {
       position: sticky;
       top: 0;
-      background: #ffffff;
+      background: #fff;
       border-bottom: 1px solid #eee;
       padding: 1rem;
       text-align: center;
@@ -40,42 +36,35 @@
       font-weight: 600;
     }
 
-    nav a:hover {
-      color: #0366d6;
-    }
+    nav a:hover { color: #0366d6; }
 
     header {
-  background: radial-gradient(circle at 20% 20%, #444, #1f1f1f);
-  color: white;
-  padding: 5rem 2rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
+      background: radial-gradient(circle at 20% 20%, #444, #1f1f1f);
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 3rem;
     }
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
+    header p { font-size: 1.2rem; }
 
     .badge {
       display: inline-block;
       background: #0366d6;
-      color: white;
       padding: 0.3rem 0.8rem;
       border-radius: 999px;
-      font-size: 0.9rem;
       margin-top: 0.5rem;
     }
 
     section {
       padding: 3rem 2rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -85,12 +74,6 @@
       margin-bottom: 1.5rem;
     }
 
-    hr {
-      margin: 2rem 0;
-      border: none;
-      border-top: 1px solid #ddd;
-    }
-
     footer {
       background: #222;
       color: #ccc;
@@ -98,41 +81,41 @@
       text-align: center;
     }
 
-    /* HEAD FIRST STYLE ELEMENTS */
+    /* HEAD FIRST STYLE */
+    .sharpen {
+      background: #fff8dc;
+      padding: 1rem;
+      border-left: 5px solid #f4c430;
+      margin: 2rem 0;
+      font-family: 'Patrick Hand', cursive;
+    }
 
-.sharpen {
-  background: #fff8dc;
-  padding: 1rem;
-  border-left: 5px solid #f4c430;
-  margin: 2rem 0;
-}
+    .sticky {
+      background: #fffacd;
+      padding: 1rem;
+      transform: rotate(-1deg);
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      margin: 1.5rem 0;
+      font-family: 'Patrick Hand', cursive;
+    }
 
-.sticky {
-  background: #fffacd;
-  padding: 1rem;
-  transform: rotate(-1deg);
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-  margin: 1.5rem 0;
-}
+    .callout {
+      border-left: 4px solid #0366d6;
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+      font-family: 'Patrick Hand', cursive;
+    }
 
-.callout {
-  border-left: 4px solid #0366d6;
-  padding-left: 1rem;
-  margin: 1.5rem 0;
-  font-style: italic;
-}
-
-.chapter {
-  text-align: center;
-  opacity: 0.6;
-  margin: 2rem 0;
-}
+    .chapter {
+      text-align: center;
+      opacity: 0.6;
+      margin: 2rem 0;
+    }
 
   </style>
 </head>
 <body>
 
-<!-- NAVBAR -->
 <nav>
   <a href="#about">Me</a>
   <a href="#philosophy">How I Think</a>
@@ -143,132 +126,106 @@
 </nav>
 
 <header>
-  <h1>Pankaj Chandrakant Mulay</h1>
+  <h1>A B C</h1>
   <p>I build software, smile and drink coffee ☕</p>
   <div class="badge">Engineer at heart. Builder by habit.</div>
-  <div style="
-  position:absolute;
-  width:300px;
-  height:300px;
-  background:rgba(3,102,214,0.2);
-  border-radius:50%;
-  top:-50px;
-  left:-50px;
-  filter: blur(80px);
-"></div>
+
+  <!-- subtle glow -->
+  <div style="position:absolute; width:300px; height:300px; background:rgba(3,102,214,0.2); border-radius:50%; top:-50px; left:-50px; filter: blur(80px);"></div>
+
+  <!-- LEFT SVG (Coffee) -->
+  <svg viewBox="0 0 64 64" style="position:absolute; left:5%; top:50%; transform:translateY(-50%); width:120px; opacity:0.08;">
+    <path d="M10 40h30a10 10 0 0 0 0-20h-5" stroke="white" fill="none" stroke-width="2"/>
+    <rect x="10" y="20" width="30" height="20" rx="5" stroke="white" fill="none" stroke-width="2"/>
+  </svg>
+
+  <!-- RIGHT SVG (Architecture) -->
+  <svg viewBox="0 0 64 64" style="position:absolute; right:5%; top:50%; transform:translateY(-50%); width:140px; opacity:0.08;">
+    <rect x="10" y="10" width="12" height="12" stroke="white" fill="none"/>
+    <rect x="42" y="10" width="12" height="12" stroke="white" fill="none"/>
+    <rect x="26" y="40" width="12" height="12" stroke="white" fill="none"/>
+    <line x1="22" y1="16" x2="42" y2="16" stroke="white"/>
+    <line x1="32" y1="22" x2="32" y2="40" stroke="white"/>
+  </svg>
+
 </header>
 
-<!-- PHILOSOPHY -->
-<section id="philosophy" style="background:#fff;">
+<section id="philosophy">
   <h2>How I Think 💭</h2>
-  <p>⚖️ <strong>Good software architecture is just smart trade-offs.</strong></p>
-  <p>🧠 <strong>Learn the rules… then know when to break them.</strong></p>
-  <p>☕ <strong>Most bugs can be solved with patience, curiosity… and coffee.</strong></p>
-  <p>🚀 <strong>Simple scales. Complex breaks.</strong></p>
+  <p>⚖️ <strong>Good architecture is smart trade-offs.</strong></p>
+  <p>🧠 <strong>Learn the rules… then break them wisely.</strong></p>
 
   <div class="sticky">
-  ⚖️ Every architecture decision is a trade-off… even the ones you don’t realize you’re making.
-</div>
+    Every architecture decision is a trade-off… even the ones you don’t realize.
+  </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <h2>About Me</h2>
 
-  <p>I’ve swum in three oceans, jumped out of a plane, gone whale watching, and camped under Ontario skies.</p>
+  <p>I’ve swum in three oceans, jumped out of a plane, and camped under Ontario skies.</p>
 
-  <div class="sticky">
-    🌍 Not all in one day… but still counts.
-  </div>
+  <div class="sticky">🌍 Not all in one day… but still counts.</div>
 
-  <p>Recently trying yoga… still negotiating with gravity 🧘</p>
+  <p>Trying yoga… still negotiating with gravity 🧘</p>
 
-  <p>Explored Banff, Jasper, Nova Scotia, Vancouver Island and more. Some for nature, some for peace, some just because why not.</p>
-
-  <p>I really love coffee. This is non-negotiable ☕</p>
+  <p>I really love coffee ☕</p>
 
   <div class="sharpen">
-    <strong>✏️ Sharpen Your Pencil</strong>
-    <p>When was the last time you tried something new… and were okay being bad at it?</p>
+    ✏️ When was the last time you enjoyed being bad at something new?
   </div>
 
   <div class="chapter">— A small detour into code —</div>
 
-  <p>I’ve been building software for 19 years.</p>
+  <p>19 years building software.</p>
 
-  <p>Started with C/C++ (don’t ask me anything now 😄). DSA felt like rocket science then… still does sometimes.</p>
+  <p>Started with C/C++. Now mostly Java, Python, and curiosity.</p>
 
   <div class="callout">
-    Fun fact: I only recently started enjoying DSA… after 15+ years in the industry.
+    Started enjoying DSA after 15+ years. Never too late.
   </div>
 
-  <p>Did a final year project on refactoring C code before it was cool. Also gave a seminar on Extreme Programming in 2005 — felt like explaining the future.</p>
-
-  <p>Picked up Java on the job and stayed. From “just enough” to deep curiosity about internals, performance, and design.</p>
-
-  <div class="sticky">
-    ☕ Coffee + curiosity = most of my learning breakthroughs
-  </div>
-
-  <p>Now exploring Python, AI, and payment systems — and actually enjoying learning again.</p>
+  <p>Now exploring AI and payment systems.</p>
 
 </section>
 
-<!-- BOOKS -->
 <section id="books">
   <h2>Books 📚</h2>
 
-  <h3>📖 Currently Reading</h3>
+  <h3>Currently Reading</h3>
   <ul>
-    <li><strong>Effective Java</strong> — Joshua Bloch</li>
+    <li>Effective Java — Joshua Bloch</li>
   </ul>
 
-  <h3>✅ Finished</h3>
+  <h3>Finished</h3>
   <ul>
-    <li><strong>Deep Work</strong> — Cal Newport</li>
-    <li><strong>Head First Software Architecture</strong> — Mark Richards & Neal Ford</li>
-    <li><strong>Awakening at Midlife</strong> — Kathleen A. Brehony</li>
-    <li><strong>Eat That Frog</strong> — Brian Tracy</li>
-    <li><strong>The Alchemist</strong> — Paulo Coelho</li>
-    <li><strong>The Monk Who Sold His Ferrari</strong> — Robin Sharma</li>
-  </ul>
-
-  <h3>📚 Next Up</h3>
-  <ul>
-    <li><strong>Atomic Habits</strong> — James Clear</li>
-    <li><strong>The Lord of the Rings</strong> — J.R.R. Tolkien</li>
-    <li><strong>The Da Vinci Code</strong> — Dan Brown</li>
-    <li><strong>Mrityunjaya</strong> — Shivaji Sawant</li>
-    <li><strong>Mahabharata</strong></li>
+    <li>Deep Work — Cal Newport</li>
+    <li>Head First Software Architecture — Mark Richards & Neal Ford</li>
+    <li>The Alchemist — Paulo Coelho</li>
   </ul>
 
   <div class="sharpen">
-  <strong>✏️ Sharpen Your Pencil</strong>
-  <p>Which book has changed how you think — not just what you know?</p>
-</div>
+    ✏️ Which book changed how you think?
+  </div>
 </section>
 
-<!-- BUCKET -->
 <section id="bucket">
   <h2>Bucket List</h2>
   <ul style="list-style:none;">
-    <li><input type="checkbox" checked disabled> Skydiving ✅</li>
-    <li><input type="checkbox" checked disabled> Swim in 3 oceans ✅</li>
-    <li><input type="checkbox"> Machu Picchu – Inca Trail</li>
-    <li><input type="checkbox"> Amazon Rainforest</li>
+    <li><input type="checkbox" checked disabled> Skydiving</li>
+    <li><input type="checkbox" checked disabled> 3 Oceans</li>
+    <li><input type="checkbox"> Machu Picchu</li>
   </ul>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <h2>Builds 🚧</h2>
-  <p>Work in progress… exciting things coming.</p>
+  <p>Coming soon...</p>
 </section>
 
-<!-- CONNECT -->
 <section id="connect">
   <h2>Connect</h2>
-  <p>GitHub | LinkedIn | Blog (links coming soon)</p>
+  <p>GitHub | LinkedIn | Blog</p>
 </section>
 
 <footer>
