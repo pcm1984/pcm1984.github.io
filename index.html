@@ -127,6 +127,28 @@ details p {
   color: #444;
 }
 
+    .progress-container {
+  margin-top: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0366d6;
+}
+
+.progress-text {
+  font-size: 0.8rem;
+  color: #555;
+}
+
   </style>
 </head>
 <body>
@@ -207,53 +229,95 @@ details p {
 <section id="books">
   <h2>Books 📚</h2>
 
-  <h3>Currently Reading</h3>
+  <h3>📖 Currently Reading</h3>
   <ul>
-    <li>Designing Machine Learning Systems - Chip Huyen</li>
+    <li>
+      <strong>Atomic Habits</strong> — James Clear
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 5%;"></div>
+        </div>
+        <div class="progress-text">Page 15 · Just getting started 🚀</div>
+      </div>
+    </li>
+
+    <li>
+      <strong>SQL Cookbook</strong> — Anthony Molinaro
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 10%;"></div>
+        </div>
+        <div class="progress-text">Warming up with queries…</div>
+      </div>
+    </li>
   </ul>
 
   <h3>✅ Finished</h3>
-<ul>
-  <li>
-    <strong>Deep Work</strong> — Cal Newport
-    <details>
-      <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
-      <p>Focus is not just a skill, it's a competitive advantage. The ability to sit with something difficult without distraction is becoming rare — and valuable.</p>
-    </details>
-  </li>
+  <ul>
+    <li>
+      <strong>Effective Java</strong> — Joshua Bloch
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Good abstractions and clean APIs age better than clever code. Simplicity compounds.</p>
+      </details>
+    </li>
 
-  <li>
-    <strong>Head First Software Architecture</strong> — Mark Richards & Neal Ford
-    <details>
-      <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
-      <p>Architecture is not about perfection. It’s about understanding trade-offs and making decisions with clarity under constraints.</p>
-    </details>
-  </li>
+    <li>
+      <strong>Deep Work</strong> — Cal Newport
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Focus is a competitive advantage in a distracted world.</p>
+      </details>
+    </li>
 
-  <li>
-    <strong>Eat That Frog</strong> — Brian Tracy
-    <details>
-      <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
-      <p>Clarity beats motivation. Knowing exactly what needs to be done removes most of the resistance. Breaking a task into subtasks more often than realized makes it achievable.</p>
-    </details>
-  </li>
+    <li>
+      <strong>Designing Machine Learning Systems</strong> — Chip Huyen
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Real-world ML is more about data pipelines and feedback loops than fancy models.</p>
+      </details>
+    </li>
 
-  <li>
-    <strong>The Alchemist</strong> — Paulo Coelho
-    <details>
-      <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
-      <p>The journey matters as much as the destination. Sometimes the path itself shapes what you're really seeking.</p>
-    </details>
-  </li>
+    <li>
+      <strong>Head First Software Architecture</strong> — Mark Richards & Neal Ford
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Architecture is about trade-offs, not perfection.</p>
+      </details>
+    </li>
 
-  <li>
-    <strong>The Monk Who Sold His Ferrari</strong> — Robin Sharma
-    <details>
-      <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
-      <p>Small daily practices shape long-term outcomes more than big, occasional efforts.</p>
-    </details>
-  </li>
-</ul>
+    <li>
+      <strong>Eat That Frog</strong> — Brian Tracy
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Clarity removes resistance more than motivation does.</p>
+      </details>
+    </li>
+
+    <li>
+      <strong>The Alchemist</strong> — Paulo Coelho
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>The journey shapes the meaning of the destination.</p>
+      </details>
+    </li>
+
+    <li>
+      <strong>The Monk Who Sold His Ferrari</strong> — Robin Sharma
+      <details>
+        <summary style="cursor:pointer; color:#0366d6;">What stayed with me…</summary>
+        <p>Small daily habits quietly shape your life.</p>
+      </details>
+    </li>
+  </ul>
+
+  <h3>📚 Next Up</h3>
+  <ul>
+    <li><strong>The Lord of the Rings</strong> — J.R.R. Tolkien</li>
+    <li><strong>The Da Vinci Code</strong> — Dan Brown</li>
+    <li><strong>Mrityunjaya</strong> — Shivaji Sawant</li>
+    <li><strong>Mahabharata</strong></li>
+  </ul>
 
   <div class="sharpen">
     ✏️ Which book changed how you think?
